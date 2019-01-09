@@ -1,6 +1,6 @@
 package com.jerry.hdfs.config;
 
-import org.apache.hadoop.hbase.HBaseConfiguration;
+//import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,8 @@ public class HDFSConfig {
 
     @Bean
     public org.apache.hadoop.conf.Configuration getConfiguration() {
-        org.apache.hadoop.conf.Configuration conf = HBaseConfiguration.create();
+//        org.apache.hadoop.conf.Configuration conf = HBaseConfiguration.create();
+        org.apache.hadoop.conf.Configuration conf = new org.apache.hadoop.conf.Configuration();
         conf.set("fs.defaultFS", defaultFS);
         return conf;
     }

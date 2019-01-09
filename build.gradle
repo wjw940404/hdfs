@@ -35,9 +35,9 @@ dependencies {
     compile("org.apache.hadoop:hadoop-mapreduce-client-core:$hadoopVersion") {
         exclude group: 'org.slf4j', module: 'slf4j-log4j12'
     }
-    compile("org.apache.hbase:hbase-common:2.1.1"){
-        exclude group: 'org.slf4j', module: 'slf4j-log4j12'
-    }
+//    compile("org.apache.hbase:hbase-common:2.1.1"){
+//        exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+//    }
     compile("com.alibaba:fastjson:1.2.54")
     compile("org.projectlombok:lombok:1.18.4")
     testImplementation('org.springframework.boot:spring-boot-starter-test')
